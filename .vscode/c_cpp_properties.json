@@ -1,0 +1,14 @@
+{
+	"configurations": [
+		{
+			"name": "inkubEditor Editor Linux Development (inkub)",
+			"intelliSenseMode": "clang-x64",
+			"compileCommands": "/pc/ue4-projects/inkub/.vscode/compileCommands_inkub.json"
+		},
+		{
+			"name": "Linux",
+			"intelliSenseMode": "clang-x64",
+			"compileCommands": "/pc/ue4-projects/inkub/.vscode/compileCommands_Default.json"
+		}
+	]
+}

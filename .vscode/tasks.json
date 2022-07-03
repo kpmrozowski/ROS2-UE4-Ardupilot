@@ -1,0 +1,445 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"label": "inkub Linux Debug Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"inkub",
+				"Linux",
+				"Debug",
+				"/pc/ue4-projects/inkub/inkub.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/pc/sdk/UnrealEngine"
+			}
+		},
+		{
+			"label": "inkub Linux Debug Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"inkub",
+				"Linux",
+				"Debug",
+				"/pc/ue4-projects/inkub/inkub.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"inkub Linux Debug Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/pc/sdk/UnrealEngine"
+			}
+		},
+		{
+			"label": "inkub Linux Debug Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"inkub",
+				"Linux",
+				"Debug",
+				"/pc/ue4-projects/inkub/inkub.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/pc/sdk/UnrealEngine"
+			}
+		},
+		{
+			"label": "inkub Linux DebugGame Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"inkub",
+				"Linux",
+				"DebugGame",
+				"/pc/ue4-projects/inkub/inkub.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/pc/sdk/UnrealEngine"
+			}
+		},
+		{
+			"label": "inkub Linux DebugGame Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"inkub",
+				"Linux",
+				"DebugGame",
+				"/pc/ue4-projects/inkub/inkub.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"inkub Linux DebugGame Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/pc/sdk/UnrealEngine"
+			}
+		},
+		{
+			"label": "inkub Linux DebugGame Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"inkub",
+				"Linux",
+				"DebugGame",
+				"/pc/ue4-projects/inkub/inkub.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/pc/sdk/UnrealEngine"
+			}
+		},
+		{
+			"label": "inkub Linux Development Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"inkub",
+				"Linux",
+				"Development",
+				"/pc/ue4-projects/inkub/inkub.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/pc/sdk/UnrealEngine"
+			}
+		},
+		{
+			"label": "inkub Linux Development Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"inkub",
+				"Linux",
+				"Development",
+				"/pc/ue4-projects/inkub/inkub.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"inkub Linux Development Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/pc/sdk/UnrealEngine"
+			}
+		},
+		{
+			"label": "inkub Linux Development Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"inkub",
+				"Linux",
+				"Development",
+				"/pc/ue4-projects/inkub/inkub.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/pc/sdk/UnrealEngine"
+			}
+		},
+		{
+			"label": "inkub Linux Shipping Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"inkub",
+				"Linux",
+				"Shipping",
+				"/pc/ue4-projects/inkub/inkub.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/pc/sdk/UnrealEngine"
+			}
+		},
+		{
+			"label": "inkub Linux Shipping Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"inkub",
+				"Linux",
+				"Shipping",
+				"/pc/ue4-projects/inkub/inkub.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"inkub Linux Shipping Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/pc/sdk/UnrealEngine"
+			}
+		},
+		{
+			"label": "inkub Linux Shipping Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"inkub",
+				"Linux",
+				"Shipping",
+				"/pc/ue4-projects/inkub/inkub.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/pc/sdk/UnrealEngine"
+			}
+		},
+		{
+			"label": "inkub Linux Test Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"inkub",
+				"Linux",
+				"Test",
+				"/pc/ue4-projects/inkub/inkub.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/pc/sdk/UnrealEngine"
+			}
+		},
+		{
+			"label": "inkub Linux Test Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"inkub",
+				"Linux",
+				"Test",
+				"/pc/ue4-projects/inkub/inkub.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"inkub Linux Test Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/pc/sdk/UnrealEngine"
+			}
+		},
+		{
+			"label": "inkub Linux Test Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"inkub",
+				"Linux",
+				"Test",
+				"/pc/ue4-projects/inkub/inkub.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/pc/sdk/UnrealEngine"
+			}
+		},
+		{
+			"label": "inkubEditor Linux Debug Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"inkubEditor",
+				"Linux",
+				"Debug",
+				"/pc/ue4-projects/inkub/inkub.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/pc/sdk/UnrealEngine"
+			}
+		},
+		{
+			"label": "inkubEditor Linux Debug Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"inkubEditor",
+				"Linux",
+				"Debug",
+				"/pc/ue4-projects/inkub/inkub.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"inkubEditor Linux Debug Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/pc/sdk/UnrealEngine"
+			}
+		},
+		{
+			"label": "inkubEditor Linux Debug Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"inkubEditor",
+				"Linux",
+				"Debug",
+				"/pc/ue4-projects/inkub/inkub.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/pc/sdk/UnrealEngine"
+			}
+		},
+		{
+			"label": "inkubEditor Linux DebugGame Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"inkubEditor",
+				"Linux",
+				"DebugGame",
+				"/pc/ue4-projects/inkub/inkub.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/pc/sdk/UnrealEngine"
+			}
+		},
+		{
+			"label": "inkubEditor Linux DebugGame Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"inkubEditor",
+				"Linux",
+				"DebugGame",
+				"/pc/ue4-projects/inkub/inkub.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"inkubEditor Linux DebugGame Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/pc/sdk/UnrealEngine"
+			}
+		},
+		{
+			"label": "inkubEditor Linux DebugGame Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"inkubEditor",
+				"Linux",
+				"DebugGame",
+				"/pc/ue4-projects/inkub/inkub.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/pc/sdk/UnrealEngine"
+			}
+		},
+		{
+			"label": "inkubEditor Linux Development Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"inkubEditor",
+				"Linux",
+				"Development",
+				"/pc/ue4-projects/inkub/inkub.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/pc/sdk/UnrealEngine"
+			}
+		},
+		{
+			"label": "inkubEditor Linux Development Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"inkubEditor",
+				"Linux",
+				"Development",
+				"/pc/ue4-projects/inkub/inkub.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"inkubEditor Linux Development Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/pc/sdk/UnrealEngine"
+			}
+		},
+		{
+			"label": "inkubEditor Linux Development Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"inkubEditor",
+				"Linux",
+				"Development",
+				"/pc/ue4-projects/inkub/inkub.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/pc/sdk/UnrealEngine"
+			}
+		}
+	]
+}

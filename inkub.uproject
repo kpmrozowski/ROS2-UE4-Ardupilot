@@ -1,0 +1,13 @@
+{
+	"FileVersion": 3,
+	"EngineAssociation": "{C1E6B362-5C00-4D80-B905-E434DD8F3B2D}",
+	"Category": "",
+	"Description": "",
+	"Modules": [
+		{
+			"Name": "inkub",
+			"Type": "Runtime",
+			"LoadingPhase": "Default"
+		}
+	]
+}

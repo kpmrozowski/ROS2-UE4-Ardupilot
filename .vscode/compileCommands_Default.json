@@ -1,0 +1,27 @@
+[
+	{
+		"file": "/pc/ue4-projects/inkub/Source/inkub/inkub.Build.cs",
+		"command": "/pc/sdk/UnrealEngine/Engine/Extras/ThirdPartyNotUE/SDKs/HostLinux/Linux_x64/v19_clang-11.0.1-centos7/x86_64-unknown-linux-gnu/bin/clang++ @\"/pc/ue4-projects/inkub/.vscode/compileCommands_Default/inkub.176.rsp\"",
+		"directory": "/pc/sdk/UnrealEngine/Engine/Source"
+	},
+	{
+		"file": "/pc/ue4-projects/inkub/Source/inkub/inkub.cpp",
+		"command": "/pc/sdk/UnrealEngine/Engine/Extras/ThirdPartyNotUE/SDKs/HostLinux/Linux_x64/v19_clang-11.0.1-centos7/x86_64-unknown-linux-gnu/bin/clang++ @\"/pc/ue4-projects/inkub/.vscode/compileCommands_Default/inkub.176.rsp\"",
+		"directory": "/pc/sdk/UnrealEngine/Engine/Source"
+	},
+	{
+		"file": "/pc/ue4-projects/inkub/Source/inkub/inkub.h",
+		"command": "/pc/sdk/UnrealEngine/Engine/Extras/ThirdPartyNotUE/SDKs/HostLinux/Linux_x64/v19_clang-11.0.1-centos7/x86_64-unknown-linux-gnu/bin/clang++ @\"/pc/ue4-projects/inkub/.vscode/compileCommands_Default/inkub.176.rsp\"",
+		"directory": "/pc/sdk/UnrealEngine/Engine/Source"
+	},
+	{
+		"file": "/pc/ue4-projects/inkub/Source/inkub/inkubGameModeBase.cpp",
+		"command": "/pc/sdk/UnrealEngine/Engine/Extras/ThirdPartyNotUE/SDKs/HostLinux/Linux_x64/v19_clang-11.0.1-centos7/x86_64-unknown-linux-gnu/bin/clang++ @\"/pc/ue4-projects/inkub/.vscode/compileCommands_Default/inkub.176.rsp\"",
+		"directory": "/pc/sdk/UnrealEngine/Engine/Source"
+	},
+	{
+		"file": "/pc/ue4-projects/inkub/Source/inkub/inkubGameModeBase.h",
+		"command": "/pc/sdk/UnrealEngine/Engine/Extras/ThirdPartyNotUE/SDKs/HostLinux/Linux_x64/v19_clang-11.0.1-centos7/x86_64-unknown-linux-gnu/bin/clang++ @\"/pc/ue4-projects/inkub/.vscode/compileCommands_Default/inkub.176.rsp\"",
+		"directory": "/pc/sdk/UnrealEngine/Engine/Source"
+	}
+]

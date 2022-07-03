@@ -1,0 +1,104 @@
+{
+	"version": "0.2.0",
+	"configurations": [
+		{
+			"name": "inkub (Debug)",
+			"request": "launch",
+			"preLaunchTask": "inkub Linux Debug Build",
+			"program": "/pc/ue4-projects/inkub/Binaries/Linux/UE4-Linux-Debug",
+			"args": [
+			],
+			"cwd": "/pc/sdk/UnrealEngine",
+			"type": "lldb"
+		},
+		{
+			"name": "inkub (DebugGame)",
+			"request": "launch",
+			"preLaunchTask": "inkub Linux DebugGame Build",
+			"program": "/pc/ue4-projects/inkub/Binaries/Linux/UE4-Linux-DebugGame",
+			"args": [
+			],
+			"cwd": "/pc/sdk/UnrealEngine",
+			"type": "lldb"
+		},
+		{
+			"name": "inkub (Development)",
+			"request": "launch",
+			"preLaunchTask": "inkub Linux Development Build",
+			"program": "/pc/ue4-projects/inkub/Binaries/Linux/UE4",
+			"args": [
+			],
+			"cwd": "/pc/sdk/UnrealEngine",
+			"type": "lldb"
+		},
+		{
+			"name": "inkub (Shipping)",
+			"request": "launch",
+			"preLaunchTask": "inkub Linux Shipping Build",
+			"program": "/pc/ue4-projects/inkub/Binaries/Linux/UE4-Linux-Shipping",
+			"args": [
+			],
+			"cwd": "/pc/sdk/UnrealEngine",
+			"type": "lldb"
+		},
+		{
+			"name": "inkub (Test)",
+			"request": "launch",
+			"preLaunchTask": "inkub Linux Test Build",
+			"program": "/pc/ue4-projects/inkub/Binaries/Linux/UE4-Linux-Test",
+			"args": [
+			],
+			"cwd": "/pc/sdk/UnrealEngine",
+			"type": "lldb"
+		},
+		{
+			"name": "inkubEditor (Debug)",
+			"request": "launch",
+			"preLaunchTask": "inkubEditor Linux Debug Build",
+			"program": "/pc/sdk/UnrealEngine/Engine/Binaries/Linux/UE4Editor-Linux-Debug",
+			"args": [
+				"/pc/ue4-projects/inkub/inkub.uproject"
+			],
+			"cwd": "/pc/sdk/UnrealEngine",
+			"type": "lldb"
+		},
+		{
+			"name": "inkubEditor (DebugGame)",
+			"request": "launch",
+			"preLaunchTask": "inkubEditor Linux DebugGame Build",
+			"program": "/pc/sdk/UnrealEngine/Engine/Binaries/Linux/UE4Editor-Linux-DebugGame",
+			"args": [
+				"/pc/ue4-projects/inkub/inkub.uproject"
+			],
+			"cwd": "/pc/sdk/UnrealEngine",
+			"type": "lldb"
+		},
+		{
+			"name": "inkubEditor (Development)",
+			"request": "launch",
+			"preLaunchTask": "inkubEditor Linux Development Build",
+			"program": "/pc/sdk/UnrealEngine/Engine/Binaries/Linux/UE4Editor",
+			"args": [
+				"/pc/ue4-projects/inkub/inkub.uproject"
+			],
+			"cwd": "/pc/sdk/UnrealEngine",
+			"type": "lldb"
+		},
+		{
+			"name": "Generate Project Files",
+			"type": "mono",
+			"request": "launch",
+			"program": "/pc/sdk/UnrealEngine/Engine/Binaries/DotNET/UnrealBuildTool.exe",
+			"console": "internalConsole",
+			"args": [
+				"-projectfiles",
+				"-vscode",
+				"-project=/pc/ue4-projects/inkub/inkub.uproject",
+				"-game",
+				"-engine"
+			],
+			"internalConsoleOptions": "openOnSessionStart",
+			"cwd": "/pc/sdk/UnrealEngine"
+		}
+	]
+}
